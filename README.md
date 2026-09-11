@@ -32,6 +32,8 @@ El paseo consiste en visitar sala, cocina, dormitorio y baño; encender los tres
 
 Leé [Arquitectura](docs/ARQUITECTURA.md) y [Cómo colaborar](CONTRIBUTING.md) antes de extender la base.
 
+Para publicar los commits locales de esta entrega, ejecutá `Subir a GitHub.cmd` desde la carpeta del repositorio. El acceso usa tu sesión de GitHub en Windows. Sube únicamente `codex/project-architecture`, sin forzar ni integrar otras ramas.
+
 ## Verificación
 
 En PowerShell, desde el repositorio:
