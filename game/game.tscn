@@ -1,0 +1,24 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Script" path="res://game/game.gd" id="1"]
+[ext_resource type="PackedScene" path="res://world/world.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://actors/cat/cat.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://camera/exploration_camera.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://audio/sound.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://ui/hud.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://game/paseo/paseo.tscn" id="7"]
+[node name="Game" type="Node2D"]
+process_mode = 3
+script = ExtResource("1")
+[node name="World" parent="." instance=ExtResource("2")]
+unique_name_in_owner = true
+[node name="Cat" parent="." instance=ExtResource("3")]
+unique_name_in_owner = true
+position = Vector2(222,387)
+[node name="ExplorationCamera" parent="." instance=ExtResource("4")]
+unique_name_in_owner = true
+[node name="Sound" parent="." instance=ExtResource("5")]
+unique_name_in_owner = true
+[node name="HUD" parent="." instance=ExtResource("6")]
+unique_name_in_owner = true
+[node name="PaseoMission" parent="." instance=ExtResource("7")]
+unique_name_in_owner = true

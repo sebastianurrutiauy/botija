@@ -1,0 +1,11 @@
+# Godot cache; source .uid and .import settings ARE tracked.
+.godot/
+*.tmp
+*.log
+export.cfg
+export_credentials.cfg
+builds/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,163 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/hud.gd" id="1"]
+[ext_resource type="PackedScene" path="res://ui/pause_menu.tscn" id="2_276te"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_546lt"]
+content_margin_left = 9.0
+content_margin_top = 5.0
+content_margin_right = 9.0
+content_margin_bottom = 5.0
+bg_color = Color(0.078431375, 0.14117648, 0.1764706, 0.9254902)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.54901963, 0.46666667, 0.3254902, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ihmi"]
+content_margin_left = 9.0
+content_margin_top = 5.0
+content_margin_right = 9.0
+content_margin_bottom = 5.0
+bg_color = Color(0.078431375, 0.14117648, 0.1764706, 0.9254902)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.54901963, 0.46666667, 0.3254902, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_en2x2"]
+content_margin_left = 9.0
+content_margin_top = 5.0
+content_margin_right = 9.0
+content_margin_bottom = 5.0
+bg_color = Color(0.078431375, 0.14117648, 0.1764706, 0.9254902)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.54901963, 0.46666667, 0.3254902, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_euhrg"]
+content_margin_left = 9.0
+content_margin_top = 5.0
+content_margin_right = 9.0
+content_margin_bottom = 5.0
+bg_color = Color(0.078431375, 0.14117648, 0.1764706, 0.9254902)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.54901963, 0.46666667, 0.3254902, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="HUD" type="CanvasLayer" unique_id=585499721]
+process_mode = 3
+script = ExtResource("1")
+
+[node name="TitlePanel" type="PanelContainer" parent="." unique_id=659106628]
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 257.0
+offset_bottom = 48.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_546lt")
+
+[node name="TitleColumn" type="VBoxContainer" parent="TitlePanel" unique_id=183973377]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Title" type="Label" parent="TitlePanel/TitleColumn" unique_id=840097196]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93333334, 0.8784314, 0.7764706, 1)
+theme_override_font_sizes/font_size = 15
+text = "PATITAS DE NOCHE"
+
+[node name="PlaceLabel" type="Label" parent="TitlePanel/TitleColumn" unique_id=553096037]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6745098, 0.8, 0.7647059, 1)
+theme_override_font_sizes/font_size = 9
+
+[node name="ObjectivePanel" type="PanelContainer" parent="." unique_id=1046737318]
+offset_left = 390.0
+offset_top = 8.0
+offset_right = 630.0
+offset_bottom = 48.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7ihmi")
+
+[node name="GoalLabel" type="Label" parent="ObjectivePanel" unique_id=2092815782]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93333334, 0.8784314, 0.7764706, 1)
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 3
+
+[node name="DialogPanel" type="PanelContainer" parent="." unique_id=2113912209]
+offset_left = 60.0
+offset_top = 303.0
+offset_right = 580.0
+offset_bottom = 338.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_en2x2")
+
+[node name="Dialog" type="Label" parent="DialogPanel" unique_id=675005352]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.93333334, 0.8784314, 0.7764706, 1)
+theme_override_font_sizes/font_size = 10
+autowrap_mode = 3
+
+[node name="Prompt" type="Label" parent="." unique_id=1619467192]
+unique_name_in_owner = true
+offset_top = 289.0
+offset_right = 640.0
+offset_bottom = 303.0
+theme_override_colors/font_color = Color(1, 0.87058824, 0.6, 1)
+theme_override_colors/font_shadow_color = Color(0.0627451, 0.101960786, 0.15686275, 1)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+horizontal_alignment = 1
+
+[node name="Controls" type="Label" parent="." unique_id=843836028]
+unique_name_in_owner = true
+offset_top = 345.0
+offset_right = 640.0
+offset_bottom = 357.0
+theme_override_colors/font_color = Color(0.89411765, 0.8627451, 0.7882353, 1)
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 1
+
+[node name="PauseMenu" type="PanelContainer" parent="." unique_id=129480362 instance=ExtResource("2_276te")]
+unique_name_in_owner = true
+visible = false
+offset_left = 195.0
+offset_top = 85.0
+offset_right = 445.0
+offset_bottom = 277.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_euhrg")
+
+[node name="Fade" type="ColorRect" parent="." unique_id=576355059]
+unique_name_in_owner = true
+offset_right = 640.0
+offset_bottom = 360.0
+mouse_filter = 2
+color = Color(0.02, 0.025, 0.05, 0)

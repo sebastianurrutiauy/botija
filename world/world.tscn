@@ -1,0 +1,15 @@
+[gd_scene load_steps=8 format=3]
+[ext_resource type="Script" path="res://world/world.gd" id="1"]
+[ext_resource type="PackedScene" path="res://world/lighting/cozy_lighting.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://world/neighborhood/neighborhood.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://world/living_room/living_room.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://world/kitchen/kitchen.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://world/bedroom/bedroom.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://world/bathroom/bathroom.tscn" id="7"]
+[node name="World" type="Node2D"]
+process_mode = 1
+script = ExtResource("1")
+neighborhood = ExtResource("3")
+rooms = Array[PackedScene]([ExtResource("4"),ExtResource("5"),ExtResource("6"),ExtResource("7")])
+[node name="Lighting" parent="." instance=ExtResource("2")]
+unique_name_in_owner = true
