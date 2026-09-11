@@ -2,7 +2,7 @@
 
 Godot 4.7.2, Windows, renderer Compatibility. Versión del proyecto: 0.2.0.
 
-- Importación completa sin errores de scripts o recursos.
+- Importación completa sin errores de scripts o recursos, repetida desde un clon limpio del commit (sin caché `.godot`).
 - Recorrido automático: **60 comprobaciones, 0 fallas**. Movimiento, salto, cuatro habitaciones, puertas de ida/vuelta, interruptores, jardín, tres faroles, pausa, regreso, descanso y guardado.
 - Casos adicionales: sesiones independientes, escenas instanciadas, botones traducibles sin cambiar acción, guardado incompleto y habitación fraccionaria rechazados sin alterar la partida actual.
 - Capturas nuevas de barrio, jardín y cuatro habitaciones con renderizado real. Inspección visual de sala y barrio.

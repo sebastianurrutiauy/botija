@@ -42,4 +42,3 @@ func interact(target: String) -> void:
 				sound_requested.emit("success")
 				message_requested.emit("UNA PATITA, UNA LUZ\nFaroles encendidos: %d / 3. La plaza se siente un poco más viva." % state.lanterns.count(true),6)
 				progress_changed.emit()
-

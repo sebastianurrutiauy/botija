@@ -30,4 +30,3 @@ func tone(kind: String) -> void:
 	stream = wav
 	volume_db = -10.0
 	play()
-

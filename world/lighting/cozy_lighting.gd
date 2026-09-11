@@ -56,4 +56,3 @@ func _process(delta: float) -> void:
 	time += delta
 	for i in range(lights.size()):
 		lights[i].energy = float(lights[i].get_meta("base")) * (1.0+sin(time*2.3+i*2.1)*0.025+sin(time*6.1+i)*0.012)
-
